@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Rampart+One&display=swap');
 *{
     padding: 0;
     margin:0;
@@ -47,9 +48,10 @@ header{
     display: none;
 }
 .hero-img{
-    margin-right: 600px;
+    margin-right: 550px;
     width: 200px;
-    height: 300 px;
+    height: 300px;
+    margin-bottom: 420px;
     }
 img{
     max-width: 300%;
@@ -79,12 +81,12 @@ img{
     color: white;
     margin-bottom: 40px;
 }
-.hero-text h1{
-    font-family: "Rampart One", sans-serif;
+.hero-text h2{
+    font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1;
   margin: 0 0 45px;
 }
@@ -189,12 +191,70 @@ img{
         width: 100%;
         height: auto;
     }
-    .hero-text h1{ 
+    .hero-text h2{ 
         font-size: 75px;
         margin: 0 0 30px;
 
     }
     .hero-text h5{
         margin-bottom: 25px;
+    }
+}
+@media(max-width:1195px){
+    section{
+        padding:0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 560px;
+        height: auto;
+     }
+     .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+     }
+     .icons{
+        display: none;
+     }
+     .scroll-down{
+        display: none;
+     }
+}
+
+@media(max-width:990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #FF204E;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 7px 0;
+    }
+}
+
+@media(max-width:680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
     }
 }

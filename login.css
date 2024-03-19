@@ -1,0 +1,48 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, #FF204E 0%, #A0153E 50%, #5D0E41 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    background: linear-gradient(90deg, #FF204E 0%, #A0153E 50%, #5D0E41 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFFFFF; /* Default background color */
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    background: linear-gradient(90deg, #FF204E 0%, #A0153E 50%, #5D0E41 100%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-container input[type="submit"]:hover {
+    background: linear-gradient(90deg, #FF5C70 0%, #FF204E 100%);
+}
